@@ -1,7 +1,7 @@
 // Có thể sử dụng biến của Bootstrap
 // TODO: Liệu có thể sử dụng mixin của Bootstrap?
 @each $color, $value in $theme-colors {
-    @debug "Màu sắc: #{$color}";
+    // @debug "Màu sắc: #{$color}";
 
     // Thêm dấu slash \:
     .hover\:bg-#{$color} {

@@ -2,13 +2,12 @@ $darkColor: #1d1d1d;
 $semiDarkColor: #282828;
 $whiteColor: #fff;
 $grayColor: #bbb;
-$highLightColor: #ffc107; // .text-warning
+$highLightColor: #ffc107; // giống .text-warning
 
 
 // .dark-theme {
 body {
-    background-color: $darkColor !important;
-    // color: $whiteColor;
+    background-color: $gray-800 !important;
     color: $grayColor;
 
     .form-control,
@@ -69,10 +68,18 @@ body {
 }
 
 .bg-dark {
-    background-color: $darkColor !important;
+    background-color: $gray-900 !important;
 }
 
 // Thư viện noti
 .confirm-dialog {
-    background-color: $darkColor !important;
+    background-color: $gray-700 !important;
+}
+
+.confirm-message {
+    color: $white;
+}
+
+.table {
+    color: $grayColor;
 }

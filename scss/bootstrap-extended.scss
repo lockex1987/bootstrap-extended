@@ -106,3 +106,12 @@ label {
 .rounded-down {
     border-radius: 0 0 0.25rem 0.25rem;
 }
+
+// Hiển thị các dấu $ ở phía trước câu lệnh
+// Các ký tự này sẽ không bị copy
+.command-line {
+    &::before {
+        content: "$ ";
+        font-size: 0.75rem;
+    }
+}
