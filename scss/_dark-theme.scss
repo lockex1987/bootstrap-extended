@@ -1,0 +1,78 @@
+$darkColor: #1d1d1d;
+$semiDarkColor: #282828;
+$whiteColor: #fff;
+$grayColor: #bbb;
+$highLightColor: #ffc107; // .text-warning
+
+
+// .dark-theme {
+body {
+    background-color: $darkColor !important;
+    // color: $whiteColor;
+    color: $grayColor;
+
+    .form-control,
+    .custom-select,
+    .form-control:focus,
+    .form-control:disabled,
+    .form-control[readonly],
+    .input-group-text,
+    .custom-control-label::after {
+        background-color: $semiDarkColor;
+        color: $whiteColor;
+    }
+
+    .modal-content {
+        background-color: $darkColor;
+    }
+
+    th,
+    .modal-title,
+    .panel-header {
+        color: $highLightColor;
+    }
+
+    .text-danger {
+        // color: $highLightColor !important;
+    }
+
+    // Common validation
+    .required::after {
+        color: $highLightColor;
+    }
+
+    .close {
+        color: $whiteColor;
+    }
+
+    .tag-input {
+        background-color: $semiDarkColor;
+
+        .tag-new {
+            background-color: $semiDarkColor;
+        }
+    }
+
+    .autocomplete__dropdown {
+        background-color: $darkColor;        
+    }
+
+    // Phân trang của Bootstrap
+    .page-link {
+        background-color: transparent;
+        color: $whiteColor;
+    }
+}
+
+.text-body {
+    color: $grayColor !important;
+}
+
+.bg-dark {
+    background-color: $darkColor !important;
+}
+
+// Thư viện noti
+.confirm-dialog {
+    background-color: $darkColor !important;
+}

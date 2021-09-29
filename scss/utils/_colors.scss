@@ -1,0 +1,30 @@
+// Có thể sử dụng biến của Bootstrap
+// TODO: Liệu có thể sử dụng mixin của Bootstrap?
+@each $color, $value in $theme-colors {
+    @debug "Màu sắc: #{$color}";
+
+    // Thêm dấu slash \:
+    .hover\:bg-#{$color} {
+        &:hover {
+            background-color: $value !important;
+        }
+    }
+
+    .hover\:text-#{$color} {
+        &:hover {
+            color: $value !important;
+        }
+    }
+
+    .bg-soft-#{$color} {
+        background-color: rgba($value, 0.15) !important;
+    }
+}
+
+.bg-blue-light {
+    background-color: #002c6e;
+}
+
+.bg-blue-lighter {
+    background-color: #00327d;
+}

@@ -1,0 +1,46 @@
+// Thêm vào CSS chung
+.custom-select {
+    -webkit-appearance: none;
+}
+
+.form-control-max-width {
+    // Hiện .form-control đang có width là 100%, nên nhiều khi trông dài quá
+    // Giới hạn ngắn lại
+    max-width: 400px;
+}
+
+.form-control-inline-width {
+    // Hiện .form-control đang có width là 100%, nên nhiều khi trông dài quá
+    // Giới hạn ngắn lại
+    max-width: 200px;
+}
+
+/*
+.form-control-mw {
+    max-width: 320px;
+}
+
+.custom-select {
+    -webkit-appearance: none;
+    &:focus {
+        border-color: #ced4da;;
+    }
+}
+*/
+
+// Rounded
+// Chỉ nên để ở màn hình login, màn hình CRUD trông xấu
+.form-control-rounded {
+    border-radius: 1.25rem;
+    padding: .375rem 1.75rem;
+}
+
+.btn-rounded {
+    border-radius: 1.25rem;
+    padding: .375rem 1.75rem;
+}
+
+
+.input-group-text-rounded {
+    border-radius: 1.25rem;
+}

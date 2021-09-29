@@ -1,0 +1,51 @@
+// BỎ BORDER
+.btn {
+    border: none;
+}
+
+// Bỏ border ở bảng
+// .table-bordered
+.table-borderless {
+    th,
+    td {
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+        border-top: 1px solid #dee2e6;
+    }
+
+    th {
+        border-top: none;
+    }
+}
+
+// Bỏ border ở phân trang
+.page-link {
+    border: none;
+}
+
+// Bỏ border ở form-control, sử dụng background để phân biệt
+.form-control,
+.custom-select,
+.input-group-text {
+    border: none;
+}
+
+.form-control,
+.custom-select,
+.form-control:focus,
+.form-control:disabled,
+.form-control[readonly],
+.input-group-text {
+    background-color: rgb(239, 243, 244);
+}
+
+
+// Bỏ border ở trên modal
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-footer {
+    border-top: none;
+}

@@ -1,0 +1,20 @@
+// Ẩn shadow bằng cách ghi đè
+.btn:active,
+.btn:focus,
+.form-control:active,
+.form-control:focus {
+    outline: 0 none;
+    box-shadow: none;
+}
+
+.form-control:focus,
+.form-control:active,
+.btn:focus,
+.btn:active,
+.custom-select:focus,
+.custom-select:active,
+.custom-control-input:focus ~ .custom-control-label::before,
+.custom-control-input:active ~ .custom-control-label::before {
+    outline: 0 none;
+    box-shadow: none;
+}

@@ -1,0 +1,25 @@
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.cursor-move {
+    cursor: move;
+}
+
+.cursor-none {
+    cursor: none;
+}
+
+.cursor-default {
+    cursor: default;
+}
+
+// Người dùng không thao tác được chuột
+.pointer-events-none {
+    pointer-events: none;
+}
+
+.pointer-events-auto {
+    pointer-events: auto;
+}
+
