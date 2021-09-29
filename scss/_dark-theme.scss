@@ -63,6 +63,10 @@ body {
     }
 }
 
+.page-item.disabled .page-link {
+    background-color: transparent;
+}
+
 .text-body {
     color: $grayColor !important;
 }
@@ -83,3 +87,11 @@ body {
 .table {
     color: $grayColor;
 }
+
+/*
+.dark-theme {
+    .table {
+        color: $grayColor;
+    }
+}
+*/
