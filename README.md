@@ -7,3 +7,4 @@ Add utility classes, support Vue, borderless, dark-theme
 1.1.1: Tạm thời chưa có mixin mq, ẩn đi
 1.1.2: Cập nhật màu sắc theo các biến của Bootstrap
 1.1.3: Chỉnh lại màu của page-link disabled
+1.1.4: Không compile bootstrap-extended

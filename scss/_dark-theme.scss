@@ -1,9 +1,5 @@
-$darkColor: #1d1d1d;
-$semiDarkColor: #282828;
-$whiteColor: #fff;
+// $grayColor: $gray-600;
 $grayColor: #bbb;
-$highLightColor: #ffc107; // giống .text-warning
-
 
 // .dark-theme {
 body {
@@ -17,49 +13,49 @@ body {
     .form-control[readonly],
     .input-group-text,
     .custom-control-label::after {
-        background-color: $semiDarkColor;
-        color: $whiteColor;
+        background-color: $gray-700;
+        color: $grayColor;
     }
 
     .modal-content {
-        background-color: $darkColor;
+        background-color: $gray-800;
+    }
+
+    .dropdown-menu {
+        background-color: $gray-700;
     }
 
     th,
     .modal-title,
     .panel-header {
-        color: $highLightColor;
-    }
-
-    .text-danger {
-        // color: $highLightColor !important;
+        color: $warning;
     }
 
     // Common validation
     .required::after {
-        color: $highLightColor;
+        color: $warning;
     }
 
     .close {
-        color: $whiteColor;
+        color: $white;
     }
 
     .tag-input {
-        background-color: $semiDarkColor;
+        background-color: $gray-700;
 
         .tag-new {
-            background-color: $semiDarkColor;
+            background-color: $gray-700;
         }
     }
 
     .autocomplete__dropdown {
-        background-color: $darkColor;        
+        background-color: $gray-800;        
     }
 
     // Phân trang của Bootstrap
     .page-link {
         background-color: transparent;
-        color: $whiteColor;
+        color: $primary;
     }
 }
 
