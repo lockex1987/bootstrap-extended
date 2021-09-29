@@ -8,7 +8,8 @@
 }
 
 .object-fit-lg-none {
-    @include mq(lg) {
+    // TODO: không có mixin mq, sử dụng của Bootstrap
+    // @include mq(lg) {
         object-fit: none;
-    }
+    // }
 }
