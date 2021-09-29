@@ -1,0 +1,21 @@
+{
+    "name": "@lockex1987/bootstrap-extended",
+    "version": "1.0.0",
+    "description": "Add utility classes, support Vue, borderless, dark-theme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lockex1987/bootstrap-extended.git"
+    },
+    "keywords": [
+        "bootstrap-extended",
+        "utility",
+        "borderless",
+        "dark-theme"
+    ],
+    "author": "lockex1987",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/lockex1987/bootstrap-extended/issues"
+    },
+    "homepage": "https://github.com/lockex1987/bootstrap-extended#readme"
+}
