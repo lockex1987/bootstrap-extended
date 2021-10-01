@@ -24,6 +24,10 @@
     border: none;
 }
 
+.page-item.active .page-link {
+    border-radius: 0.25rem;
+}
+
 // Bỏ border ở form-control, sử dụng background để phân biệt
 .form-control,
 .custom-select,

@@ -1,10 +1,11 @@
-// $grayColor: $gray-600;
-$grayColor: #bbb;
-
 // .dark-theme {
+html {
+    background-color: $gray-800; // fullscreen
+}
+
 body {
     background-color: $gray-800 !important;
-    color: $grayColor;
+    color: $gray-500;
 
     .form-control,
     .custom-select,
@@ -13,8 +14,26 @@ body {
     .form-control[readonly],
     .input-group-text,
     .custom-control-label::after {
-        background-color: $gray-700;
-        color: $grayColor;
+        // Màu nền đậm hơn vì ở sâu hơn
+        // Màu nền đậm hơn thì chữ phải sáng hơn
+        background-color: $gray-900;
+        color: $gray-300;
+        // border: 1px solid transparent;
+    }
+
+    textarea.form-control {
+        // Hiệu ứng về độ sâu
+        // box-shadow: inset 0 1px 2px rgb(0 0 0 / 30%);
+    }
+
+    .form-control {
+        // Hiệu ứng về độ sâu
+        // box-shadow: inset 0 1px 2px rgb(0 0 0 / 30%);
+    }
+
+    // Highlight khi focus
+    .form-control:focus {
+        // border: 1px solid rgba($primary, 0.5);
     }
 
     .modal-content {
@@ -23,12 +42,18 @@ body {
 
     .dropdown-menu {
         background-color: $gray-700;
+        border: none;
+    }
+
+    .dropdown-item {
+        color: $gray-100;
     }
 
     th,
     .modal-title,
     .panel-header {
-        color: $warning;
+        // color: $warning;
+        color: $gray-600; // đậm hơn hơn body
     }
 
     // Common validation
@@ -37,7 +62,8 @@ body {
     }
 
     .close {
-        color: $white;
+        color: $gray-500; // giống màu body
+        text-shadow: none;
     }
 
     .tag-input {
@@ -64,7 +90,7 @@ body {
 }
 
 .text-body {
-    color: $grayColor !important;
+    color: $gray-500 !important; // giống màu của body
 }
 
 .bg-dark {
@@ -77,17 +103,9 @@ body {
 }
 
 .confirm-message {
-    color: $white;
+    color: $gray-100;
 }
 
 .table {
-    color: $grayColor;
+    color: $gray-500; // giống màu của body
 }
-
-/*
-.dark-theme {
-    .table {
-        color: $grayColor;
-    }
-}
-*/

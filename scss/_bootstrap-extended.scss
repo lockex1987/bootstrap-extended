@@ -11,6 +11,7 @@
 @import "utils/custom-scrollbar";
 @import "utils/dropdown";
 @import "utils/embed";
+@import "utils/filter";
 @import "utils/flex";
 @import "utils/font-sizes";
 @import "utils/font-weights";
@@ -67,7 +68,7 @@
 th,
 .modal-title,
 .panel-header {
-    color: #4A4A4A;
+    // color: $gray-600; // đậm hơn body
     font-weight: 500;
     font-size: 1rem;
 }
@@ -85,13 +86,19 @@ th,
         left: 0;
         width: 28px;
         height: 2px;
-        background-color: $danger; // giống màu text-danger
+        // background-color: $danger;
+        background-color: $warning;
     }
 }
 
 label {
-    // Màu giống .text-muted
-    color: #6c757d;
+    color: $text-muted;
+}
+
+code {
+    // color: $danger;
+    // color: $warning;
+    color: $gray-100; // sáng hơn body
 }
 
 .image-box-shadow {
@@ -99,6 +106,7 @@ label {
 }
 
 // Cho ảnh ở trên của rounded card
+// Bootstrap đã có sẵn?
 .rounded-up {
     border-radius: 0.25rem 0.25rem 0 0;
 }

@@ -4,7 +4,7 @@
 :-webkit-autofill:focus {
     // Màu của chữ cũng bị thay đổi, chuyển về màu khi bình thường
     // Để màu trắng khi là .dark-theme
-    -webkit-text-fill-color: #bbb; // $grayColor
+    -webkit-text-fill-color: $gray-300; // giống màu .form-control
 
     // Thời gian đổi màu nền trong 5000s (một thời gian dài)
     transition: background-color 5000s ease-in-out 0s;
