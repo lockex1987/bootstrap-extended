@@ -68,7 +68,7 @@
 th,
 .modal-title,
 .panel-header {
-    // color: $gray-600; // đậm hơn body
+    // color: $gray-600; // tối hơn body, không nổi bật
     font-weight: 500;
     font-size: 1rem;
 }
@@ -98,7 +98,7 @@ label {
 code {
     // color: $danger;
     // color: $warning;
-    color: $gray-100; // sáng hơn body
+    color: $gray-100; // sáng hơn body cho nổi bật
 }
 
 .image-box-shadow {
@@ -141,3 +141,14 @@ $textBodyColor: #212529;
 $greenColor: #19a84c;
 $borderColor: rgba(0, 0, 0, 0.12); // #c0c0c0
 */
+
+// Ở Bootstrap 5, các thẻ a mặc định là có underline, phải thêm text-decoration-none nếu muốn ẩn đi
+// Chuyển lại mặc định là không có underline
+a {
+    text-decoration: none;
+}
+
+// Bootstrap 5 bỏ text-justify, mình vẫn dùng nhiều
+.text-justify {
+    text-align: justify;
+}

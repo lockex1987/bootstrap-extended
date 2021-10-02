@@ -1,14 +1,14 @@
 // .dark-theme {
 html {
-    background-color: $gray-800; // fullscreen
+    background-color: $gray-800; // fullscreen, giống màu body
 }
 
 body {
     background-color: $gray-800 !important;
-    color: $gray-500;
+    color: $gray-400;
 
     .form-control,
-    .custom-select,
+    .form-select,
     .form-control:focus,
     .form-control:disabled,
     .form-control[readonly],
@@ -37,23 +37,23 @@ body {
     }
 
     .modal-content {
-        background-color: $gray-800;
+        background-color: $gray-800; // giống màu body
     }
 
     .dropdown-menu {
-        background-color: $gray-700;
+        background-color: $gray-700; // ở cao hơn body nên sáng hơn
         border: none;
     }
 
     .dropdown-item {
-        color: $gray-100;
+        color: $gray-100; // sáng hơn body
     }
 
     th,
     .modal-title,
     .panel-header {
         // color: $warning;
-        color: $gray-600; // đậm hơn hơn body
+        color: $gray-600; // tối hơn hơn body, không nổi bật
     }
 
     // Common validation
@@ -62,20 +62,20 @@ body {
     }
 
     .close {
-        color: $gray-500; // giống màu body
+        color: $gray-400; // giống màu body
         text-shadow: none;
     }
 
     .tag-input {
-        background-color: $gray-700;
+        // background-color: $gray-700; // nên dùng border thay thế
 
         .tag-new {
-            background-color: $gray-700;
+            background-color: $gray-900; // giống form-control
         }
     }
 
     .autocomplete__dropdown {
-        background-color: $gray-800;        
+        background-color: $gray-800; // giống màu body
     }
 
     // Phân trang của Bootstrap
@@ -90,7 +90,7 @@ body {
 }
 
 .text-body {
-    color: $gray-500 !important; // giống màu của body
+    color: $gray-400 !important; // giống màu của body
 }
 
 .bg-dark {
@@ -99,13 +99,13 @@ body {
 
 // Thư viện noti
 .confirm-dialog {
-    background-color: $gray-700 !important;
+    background-color: $gray-700 !important; // cao hơn body nên sáng hơn
 }
 
 .confirm-message {
-    color: $gray-100;
+    color: $gray-100; // sáng hơn body
 }
 
 .table {
-    color: $gray-500; // giống màu của body
+    color: $gray-400; // giống màu của body
 }

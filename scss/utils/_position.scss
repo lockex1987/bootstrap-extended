@@ -18,8 +18,13 @@
     right: 0;
 }
 
+
 // Cần thay đổi thứ tự lặp: $breakpoint trước, rồi đến position
 // để đảm bảo media query có độ ưu tiên (precedence) lớn hơn
+// Boostrap 5 đã có? Chưa có kiểu position-xl-static
+
+$positions: static, relative, absolute, fixed, sticky !default;
+
 @each $breakpoint in map-keys($grid-breakpoints) {
     @each $position in $positions {
         @include media-breakpoint-up($breakpoint) {

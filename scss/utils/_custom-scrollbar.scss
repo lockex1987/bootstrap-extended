@@ -38,13 +38,14 @@
 
         &::-webkit-scrollbar-track {
 			// Hiển thị một thanh có độ rộng 1px
+            // $gray-800 là màu body
+            // $gray-600 thì sáng hơn
             background: linear-gradient(to right, $gray-800 2px, $gray-600 3px 3px, $gray-800 3px);
         }
 
 		// Luôn hiển thị
         &::-webkit-scrollbar-thumb {
-			// background-color: $danger;
-            background-color: $gray-700;
+            background-color: $gray-600; // sáng hơn body
             border-radius: 2px;
         }
     }

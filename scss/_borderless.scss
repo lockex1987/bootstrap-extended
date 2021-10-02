@@ -24,19 +24,19 @@
     border: none;
 }
 
-.page-item.active .page-link {
+.page-item .page-link {
     border-radius: 0.25rem;
 }
 
 // Bỏ border ở form-control, sử dụng background để phân biệt
 .form-control,
-.custom-select,
+.form-select,
 .input-group-text {
     border: none;
 }
 
 .form-control,
-.custom-select,
+.form-select,
 .form-control:focus,
 .form-control:disabled,
 .form-control[readonly],

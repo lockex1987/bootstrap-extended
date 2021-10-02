@@ -12,5 +12,6 @@ Releases:
 - 1.1.4: Không compile bootstrap-extended
 - 1.1.5: Chỉnh màu của dropdown-item
 - 1.1.6: Ít màu sắc thôi, màu dịu
+- 1.1.7: Sử dụng Bootstrap 5
 
 [Link npm](https://www.npmjs.com/package/@lockex1987/bootstrap-extended)
