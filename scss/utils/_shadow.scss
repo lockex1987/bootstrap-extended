@@ -1,0 +1,5 @@
+.shadow-lg-none {
+	@include media-breakpoint-up(lg) {
+		box-shadow: none !important;
+	}
+}

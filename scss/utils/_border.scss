@@ -1,0 +1,5 @@
+.border-lg-0 {
+	@include media-breakpoint-up(lg) {
+		border: 0 !important;
+	}
+}

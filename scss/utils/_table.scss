@@ -47,11 +47,20 @@
     }
 }
 
-
+// Căn ngang giữa tiêu đề
 .table {
     thead {
         th {
             text-align: center;
         }
+    }
+}
+
+
+// Căn dọc giữa
+.table {
+    th,
+    td {
+        vertical-align: middle;
     }
 }

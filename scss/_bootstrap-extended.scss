@@ -1,9 +1,8 @@
-// @import "vendors/bootstrap";
-
 // Các class hay dùng
 // Học tư tưởng, tham khảo: https://tailwindcss.com/
 @import "utils/animated-underline";
 @import "utils/background";
+@import "utils/border";
 @import "utils/btn-ripple";
 @import "utils/colors";
 @import "utils/cursor";
@@ -25,6 +24,7 @@
 @import "utils/position";
 @import "utils/reflection";
 @import "utils/required";
+@import "utils/shadow";
 @import "utils/sizing";
 @import "utils/table";
 @import "utils/text";
@@ -50,10 +50,12 @@
     color: $warning;
 }
 
+
 // Vue framework
 [v-cloak] {
     display: none
 }
+
 
 // Bỏ đường viền khi focus, active
 *,
@@ -63,20 +65,24 @@
     // box-shadow: none;
 }
 
+
 // Header của một vùng panel
 // Không nổi bật table header, modal header
 th,
 .modal-title,
 .panel-header {
-    // color: $gray-600; // tối hơn body, không nổi bật
+    // color: $gray-600; // nhạt hơn body, không nổi bật
     font-weight: 500;
     font-size: 1rem;
 }
 
+
 // Cho thanh bên dưới cho đẹp và nổi bật
 .modal-title,
 .panel-header {
+    /*
     position: relative;
+    margin-bottom: 1.5rem;
 
     &:after {
         display: block;
@@ -89,11 +95,16 @@ th,
         // background-color: $danger;
         background-color: $warning;
     }
+    */
+    border-left: 0.25rem solid $warning;
+    padding-left: 0.75rem;
 }
+
 
 label {
     color: $text-muted;
 }
+
 
 code {
     // color: $danger;
@@ -101,9 +112,11 @@ code {
     color: $gray-100; // sáng hơn body cho nổi bật
 }
 
+
 .image-box-shadow {
     box-shadow: inset 0 0 0 1px hsla(0, 0%, 0%, 0.1);
 }
+
 
 // Cho ảnh ở trên của rounded card
 // Bootstrap đã có sẵn?
@@ -114,6 +127,7 @@ code {
 .rounded-down {
     border-radius: 0 0 0.25rem 0.25rem;
 }
+
 
 // Hiển thị các dấu $ ở phía trước câu lệnh
 // Các ký tự này sẽ không bị copy
@@ -142,13 +156,28 @@ $greenColor: #19a84c;
 $borderColor: rgba(0, 0, 0, 0.12); // #c0c0c0
 */
 
+
 // Ở Bootstrap 5, các thẻ a mặc định là có underline, phải thêm text-decoration-none nếu muốn ẩn đi
 // Chuyển lại mặc định là không có underline
 a {
     text-decoration: none;
 }
 
+
 // Bootstrap 5 bỏ text-justify, mình vẫn dùng nhiều
 .text-justify {
     text-align: justify;
+}
+
+
+// Style nghiêng
+.skew-wrapper {
+    transform: skew(-30deg) translateX(20px);;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+.unskew {
+    transform: skew(30deg);
+    display: inline-block;
 }

@@ -1,6 +1,6 @@
 {
     "name": "@lockex1987/bootstrap-extended",
-    "version": "1.1.7",
+    "version": "1.1.8",
     "description": "Add utility classes, support Vue, borderless, dark-theme",
     "keywords": [
         "bootstrap-extended",

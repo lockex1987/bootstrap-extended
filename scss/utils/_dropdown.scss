@@ -8,7 +8,7 @@
     display: inline-block;
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
-    border-bottom: 7px solid #fff; // cùng màu bg-dropdown
+    border-bottom: 7px solid $gray-700; // giống màu dropdown-menu
     position: absolute;
     bottom: 100%;
 }

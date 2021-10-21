@@ -44,3 +44,9 @@
 .input-group-text-rounded {
     border-radius: 1.25rem;
 }
+
+
+// Highlight input group
+.input-group:focus-within .input-group-text {
+    border-color: $input-focus-border-color;
+}
