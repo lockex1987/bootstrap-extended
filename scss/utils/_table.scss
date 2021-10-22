@@ -29,6 +29,20 @@
 }
 
 
+@each $breakpoint in map-keys($grid-breakpoints) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+  
+    @include media-breakpoint-down($breakpoint) {
+        .table-responsive#{$infix} {
+            th,
+            td {
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
+
 .table-bordered {
     // Khi dùng class .table-bordered đã thêm border cho từng ô th, td rồi
     // Bỏ của bảng đi cho đỡ bị trường hợp 2 border khi dùng với .table-responsive

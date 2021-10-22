@@ -1,6 +1,8 @@
 // BỎ BORDER
 .btn {
-    border: none;
+    // border: none;
+    // Vẫn giữ vì còn btn-outline-...
+    // border-color các nút gần giống với background-color nên cũng không sao
 }
 
 // Bỏ border ở bảng
@@ -33,15 +35,6 @@
 .form-select,
 .input-group-text {
     border: none;
-}
-
-.form-control,
-.form-select,
-.form-control:focus,
-.form-control:disabled,
-.form-control[readonly],
-.input-group-text {
-    background-color: rgb(239, 243, 244);
 }
 
 

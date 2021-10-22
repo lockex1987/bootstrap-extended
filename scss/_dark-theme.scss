@@ -15,10 +15,9 @@ body {
     .input-group-text,
     .custom-control-label::after {
         // Màu nền đậm hơn vì ở sâu hơn
-        // Màu nền đậm hơn thì chữ phải sáng hơn
+        // Màu chữ giống body
         background-color: $gray-900;
-        color: $gray-300;
-        // border: 1px solid transparent;
+        color: $gray-400;
     }
 
     textarea.form-control {
@@ -53,7 +52,7 @@ body {
     .modal-title,
     .panel-header {
         // color: $warning;
-        color: $gray-600; // tối hơn hơn body, không nổi bật
+        // color: $gray-600; // tối hơn hơn body, không nổi bật, giống text-muted
     }
 
     // Common validation
@@ -64,14 +63,6 @@ body {
     .close {
         color: $gray-400; // giống màu body
         text-shadow: none;
-    }
-
-    .tag-input {
-        // background-color: $gray-700; // nên dùng border thay thế
-
-        .tag-new {
-            background-color: $gray-900; // giống form-control
-        }
     }
 
     .autocomplete__dropdown {

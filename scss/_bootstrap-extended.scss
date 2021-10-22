@@ -40,17 +40,6 @@
 @import "dark-theme";
 
 
-// Class .text-danger sử dụng để thông báo lỗi
-// Class .text-warning sử dụng để cảnh báo
-// Class .text-highlight sử dụng để nhấn mạnh
-// Class .text-primary sử dụng cho link
-// Class .text-muted sử dụng ở những chỗ không quan trọng, nhãn
-// Class .text-body sử dụng để hiển thị thông tin bình thường (không cần text-info)
-.text-highlight {
-    color: $warning;
-}
-
-
 // Vue framework
 [v-cloak] {
     display: none
@@ -71,31 +60,15 @@
 th,
 .modal-title,
 .panel-header {
-    // color: $gray-600; // nhạt hơn body, không nổi bật
     font-weight: 500;
     font-size: 1rem;
 }
 
 
-// Cho thanh bên dưới cho đẹp và nổi bật
+// Cho thanh bên trái cho đẹp và nổi bật
+// Không cho thanh dưới vì ảnh hưởng đến margin-bottom
 .modal-title,
 .panel-header {
-    /*
-    position: relative;
-    margin-bottom: 1.5rem;
-
-    &:after {
-        display: block;
-        content: "";
-        position: absolute;
-        bottom: -5px;
-        left: 0;
-        width: 28px;
-        height: 2px;
-        // background-color: $danger;
-        background-color: $warning;
-    }
-    */
     border-left: 0.25rem solid $warning;
     padding-left: 0.75rem;
 }
@@ -107,9 +80,9 @@ label {
 
 
 code {
-    // color: $danger;
-    // color: $warning;
-    color: $gray-100; // sáng hơn body cho nổi bật
+    // color: $gray-400; // giống màu body
+    color: $warning;
+    font-size: 1rem; // Bootstrap đang nhỏ hơn, cho lại về bình thường
 }
 
 
@@ -140,21 +113,6 @@ code {
 
 
 // https://flatuicolors.com/palette/gb
-/*
-$cyanColor: #4ED8DA;
-$blueColor: #007bff;
-$mutedColor: #777;
-$pinkColor: #e000df;
-$redColor: #ee3724;
-$orangeColor: #E06950;
-$yellowColor: yellow;
-$selectColor: #fff5b8;
-$goldColor: #f6b100;
-$blackColor: black;
-$textBodyColor: #212529;
-$greenColor: #19a84c;
-$borderColor: rgba(0, 0, 0, 0.12); // #c0c0c0
-*/
 
 
 // Ở Bootstrap 5, các thẻ a mặc định là có underline, phải thêm text-decoration-none nếu muốn ẩn đi
@@ -180,4 +138,10 @@ a {
 .unskew {
     transform: skew(30deg);
     display: inline-block;
+}
+
+
+// Bỏ margin này đi
+.modal-footer > * {
+    margin: unset;
 }

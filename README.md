@@ -14,5 +14,6 @@ Releases:
 - 1.1.6: Ít màu sắc thôi, màu dịu
 - 1.1.7: Sử dụng Bootstrap 5
 - 1.1.8: Responsive border, shadow; thêm skew; enable lại margin âm
+- 1.1.9: Hệ thống lại màu sắc
 
 [Link npm](https://www.npmjs.com/package/@lockex1987/bootstrap-extended)
