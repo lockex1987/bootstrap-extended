@@ -80,7 +80,6 @@ label {
 
 
 code {
-    // color: $gray-400; // giống màu body
     color: $warning;
     font-size: 1rem; // Bootstrap đang nhỏ hơn, cho lại về bình thường
 }
@@ -110,9 +109,6 @@ code {
         font-size: 0.75rem;
     }
 }
-
-
-// https://flatuicolors.com/palette/gb
 
 
 // Ở Bootstrap 5, các thẻ a mặc định là có underline, phải thêm text-decoration-none nếu muốn ẩn đi

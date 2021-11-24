@@ -1,4 +1,6 @@
 // .dark-theme {
+// TODO: Có chức năng toggle giữa dark và light theme, áp dụng trên Bootstrap form, Bootstrap modal (dạng cheatsheet)
+// Làm vậy để biết các component cần màu
 html {
     background-color: $gray-800; // fullscreen, giống màu body
 }
@@ -35,17 +37,20 @@ body {
         // border: 1px solid rgba($primary, 0.5);
     }
 
-    .modal-content {
+    .modal-content,
+    .offcanvas {
         background-color: $gray-800; // giống màu body
     }
 
     .dropdown-menu {
         background-color: $gray-700; // ở cao hơn body nên sáng hơn
         border: none;
+        color: $gray-400; // màu giống body
     }
 
     .dropdown-item {
-        color: $gray-100; // sáng hơn body
+        // color: $gray-100; // sáng hơn body
+        color: $gray-400; // màu giống body
     }
 
     th,
@@ -94,9 +99,15 @@ body {
 }
 
 .confirm-message {
-    color: $gray-100; // sáng hơn body
+    // color: $gray-100; // sáng hơn body
+    color: $gray-400; // màu giống body
 }
 
 .table {
     color: $gray-400; // giống màu của body
+}
+
+
+.bg-gray-700 {
+    background-color: $gray-700; // ở cao hơn body nên sáng hơn
 }

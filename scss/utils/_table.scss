@@ -50,15 +50,21 @@
     // border: none;
 }
 
+// Cho border nhỏ lại
+// Không để border quá đậm
 .table {
     thead {
-        // Cho border nhỏ lại
-		// Không để border quá đậm
         th,
         td {
             border-bottom-width: 1px;
         }
     }
+}
+
+// Bootstrap 5 có style .table-bordered>:not(caption)>* { border-width: 1px 0; } nên bị đậm border-bottom của thead
+// Sửa lại để k bị đậm
+.table > :not(:first-child) {
+    border-top-width: 0;
 }
 
 // Căn ngang giữa tiêu đề
