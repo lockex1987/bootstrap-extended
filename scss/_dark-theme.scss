@@ -8,77 +8,51 @@ html {
 body {
     background-color: $gray-800 !important;
     color: $gray-400;
+}
 
-    .form-control,
-    .form-select,
-    .form-control:focus,
-    .form-control:disabled,
-    .form-control[readonly],
-    .input-group-text,
-    .custom-control-label::after {
-        // Màu nền đậm hơn vì ở sâu hơn
-        // Màu chữ giống body
-        background-color: $gray-900;
-        color: $gray-400;
-    }
+.form-control,
+.form-select,
+.form-control:focus,
+.form-control:disabled,
+.form-control[readonly],
+.input-group-text,
+.custom-control-label::after {
+    // Màu nền đậm hơn vì ở sâu hơn
+    // Màu chữ giống body
+    background-color: $gray-900;
+    color: $gray-400;
+}
 
-    textarea.form-control {
-        // Hiệu ứng về độ sâu
-        // box-shadow: inset 0 1px 2px rgb(0 0 0 / 30%);
-    }
+.modal-content,
+.offcanvas {
+    background-color: $gray-800; // giống màu body
+}
 
-    .form-control {
-        // Hiệu ứng về độ sâu
-        // box-shadow: inset 0 1px 2px rgb(0 0 0 / 30%);
-    }
+.dropdown-menu {
+    background-color: $gray-700; // ở cao hơn body nên sáng hơn
+    border: none;
+    color: $gray-400; // màu giống body
+}
 
-    // Highlight khi focus
-    .form-control:focus {
-        // border: 1px solid rgba($primary, 0.5);
-    }
+.dropdown-item {
+    // color: $gray-100; // sáng hơn body
+    color: $gray-400; // màu giống body
+}
 
-    .modal-content,
-    .offcanvas {
-        background-color: $gray-800; // giống màu body
-    }
+.close {
+    color: $gray-400; // giống màu body
+    text-shadow: none;
+}
 
-    .dropdown-menu {
-        background-color: $gray-700; // ở cao hơn body nên sáng hơn
-        border: none;
-        color: $gray-400; // màu giống body
-    }
+.autocomplete__dropdown {
+    background-color: $gray-700; // giống màu dropdown-menu
+}
 
-    .dropdown-item {
-        // color: $gray-100; // sáng hơn body
-        color: $gray-400; // màu giống body
-    }
-
-    th,
-    .modal-title,
-    .panel-header {
-        // color: $warning;
-        // color: $gray-600; // tối hơn hơn body, không nổi bật, giống text-muted
-    }
-
-    // Common validation
-    .required::after {
-        color: $warning;
-    }
-
-    .close {
-        color: $gray-400; // giống màu body
-        text-shadow: none;
-    }
-
-    .autocomplete__dropdown {
-        background-color: $gray-800; // giống màu body
-    }
-
-    // Phân trang của Bootstrap
-    .page-link {
-        background-color: transparent;
-        color: $primary;
-    }
+// Phân trang của Bootstrap
+.page-link {
+    background-color: transparent;
+    color: $primary;
+    border-color: $border-color;
 }
 
 .page-item.disabled .page-link {
@@ -89,18 +63,24 @@ body {
     color: $gray-400 !important; // giống màu của body
 }
 
+.bg-body {
+    background-color: $gray-800 !important;
+}
+
 .bg-dark {
     background-color: $gray-900 !important;
 }
 
 // Thư viện noti
-.confirm-dialog {
-    background-color: $gray-700 !important; // cao hơn body nên sáng hơn
-}
+.noti-confirm {
+    .confirm-dialog {
+        background-color: $gray-700 !important; // cao hơn body nên sáng hơn
 
-.confirm-message {
-    // color: $gray-100; // sáng hơn body
-    color: $gray-400; // màu giống body
+        .confirm-message {
+            // color: $gray-100; // sáng hơn body
+            color: $gray-400; // màu giống body
+        }
+    }
 }
 
 .table {
@@ -110,4 +90,12 @@ body {
 
 .bg-gray-700 {
     background-color: $gray-700; // ở cao hơn body nên sáng hơn
+}
+
+.table-borderless {
+    th,
+    td {
+        // border-top: 1px solid $gray-700;
+        border-top: 1px solid $border-color;
+    }
 }

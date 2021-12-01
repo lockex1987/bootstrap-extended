@@ -1,4 +1,5 @@
 .required::after {
     content: "*";
-    color: $danger;
+    // color: $danger;
+    color: $warning;
 }

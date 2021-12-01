@@ -84,3 +84,19 @@
         vertical-align: middle;
     }
 }
+
+// Bỏ border ở bảng
+.table-borderless {
+    th,
+    td {
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+
+        // border-top: 1px solid $border-color; // thiết lập ở dark-theme và light-theme
+    }
+
+    th {
+        border-top: none !important;
+    }
+}

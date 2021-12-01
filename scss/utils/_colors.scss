@@ -25,10 +25,10 @@
 // Các sắc thái màu xám
 @each $color-hundred, $color-value in $grays {
     .bg-gray-#{$color-hundred} {
-        background-color: $color-value;
+        background-color: $color-value !important;
     }
 
     .text-gray-#{$color-hundred} {
-        color: $color-value;
+        color: $color-value !important;
     }
 }

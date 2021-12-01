@@ -33,11 +33,37 @@
 
 @import "elements/material-switch";
 @import 'elements/rating-star';
-
-
 @import "webkit-autofill";
-@import "borderless";
-@import "dark-theme";
+
+// Bỏ border ở trên modal
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+// Bỏ border ở form-control, sử dụng background để phân biệt
+.form-control,
+.form-select,
+.input-group-text {
+    border: none;
+}
+
+// Bỏ border ở phân trang (không nên)
+/*
+.page-link {
+    border: none;
+}
+
+.page-item .page-link {
+    border-radius: 0.25rem;
+}
+*/
+
+// @import "dark-theme";
+@import "light-theme";
 
 
 // Vue framework
@@ -67,11 +93,13 @@ th,
 
 // Cho thanh bên trái cho đẹp và nổi bật
 // Không cho thanh dưới vì ảnh hưởng đến margin-bottom
+/*
 .modal-title,
 .panel-header {
     border-left: 0.25rem solid $warning;
     padding-left: 0.75rem;
 }
+*/
 
 
 label {
@@ -140,4 +168,33 @@ a {
 // Bỏ margin này đi
 .modal-footer > * {
     margin: unset;
+}
+
+
+// Thư viện daterangepicker
+// TODO: Tách file riêng, summernote
+.daterangepicker .ranges li.active {
+    background-color: $primary !important;
+}
+
+.daterangepicker td.active,
+.daterangepicker td.active:hover {
+    background-color: $primary !important;
+}
+
+// Đang bị màu đen, chuyển thành trắng
+.btn-primary,
+.btn-primary:hover,
+.btn-outline-primary:hover {
+    color: #fff;
+}
+
+textarea {
+    min-height: 150px !important;
+}
+
+// Các icon hành động ở bảng
+// Nên để cùng màu hết
+.table-action-icon {
+    color: $primary !important;
 }

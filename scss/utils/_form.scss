@@ -13,6 +13,7 @@
     // Hiện .form-control đang có width là 100%, nên nhiều khi trông dài quá
     // Giới hạn ngắn lại
     max-width: 200px;
+    width: 200px;
 }
 
 /*
@@ -49,4 +50,17 @@
 // Highlight input group
 .input-group:focus-within .input-group-text {
     border-color: $input-focus-border-color;
+    // background-color: $white;
+}
+
+// Kể cả readonly
+// [readonly]
+.input-group:focus-within .form-control {
+    // background-color: $white !important;
+}
+
+.form-select {
+    // Màu ở như text-muted, giống single-select
+    // stroke-width nhỏ hơn
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%236c757d' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
 }

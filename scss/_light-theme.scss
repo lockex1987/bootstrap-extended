@@ -1,0 +1,29 @@
+// Đang bị màu trắng nên k đọc được trên nền trắng
+.badge {
+    color: $body-color;
+}
+
+// Thư viện noti
+// Đang transparent
+.noti-confirm {
+    .confirm-dialog {
+        background-color: $white;
+    }
+}
+
+.form-control,
+.form-select,
+.form-control:focus,
+.form-control:disabled,
+.form-control[readonly],
+.input-group-text,
+.custom-control-label::after {
+    background-color: #F2F2F2;
+}
+
+.table-borderless {
+    th,
+    td {
+        border-top: 1px solid $gray-200;
+    }
+}
