@@ -42,7 +42,8 @@
 			// Hiển thị một thanh có độ rộng 1px
             // $gray-800 là màu body
             // $gray-600 thì sáng hơn
-            background: linear-gradient(to right, $gray-800 2px, $gray-600 3px 3px, $gray-800 3px);
+            // background: linear-gradient(to right, $gray-800 2px, $gray-600 3px 3px, $gray-800 3px);
+            background: linear-gradient(to right, transparent 2px, $gray-600 3px 3px, transparent 3px);
         }
 
 		// Luôn hiển thị

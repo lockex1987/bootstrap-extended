@@ -15,5 +15,7 @@ Releases:
 - 1.1.7: Sử dụng Bootstrap 5
 - 1.1.8: Responsive border, shadow; thêm skew; enable lại margin âm
 - 1.1.9: Hệ thống lại màu sắc
+- 1.2.0: Quay lại light-theme
+- 1.2.1: Sửa transparent cho custom-scrollbar, thêm shadow-up-sm
 
 [Link npm](https://www.npmjs.com/package/@lockex1987/bootstrap-extended)
