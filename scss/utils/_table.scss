@@ -2,101 +2,105 @@
  * Ở màn hình nhỏ thì hiển thị kiểu block.
  */
 @media (max-width: 767px) {
-    /*
-    .table-bordered {
-        border: none;
+  /*
+  .table-bordered {
+    border: none;
 
-        thead {
-            th, td {
-                border-bottom-width: 0;
-            }
-        }
+    thead {
+      th, td {
+        border-bottom-width: 0;
+      }
+    }
+  }
+
+  .table {
+    tr {
+      display: block;
+      margin-bottom: 16px;
+      border-bottom: 1px solid #dee2e6;
     }
 
-    .table {
-        tr {
-            display: block;
-            margin-bottom: 16px;
-            border-bottom: 1px solid #dee2e6;
-        }
-
-        th, td {
-            display: block;
-            border-bottom: none;
-        }
+    th, td {
+      display: block;
+      border-bottom: none;
     }
-    */
+  }
+  */
 }
 
 
 @each $breakpoint in map-keys($grid-breakpoints) {
-    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
-  
-    @include media-breakpoint-down($breakpoint) {
-        .table-responsive#{$infix} {
-            th,
-            td {
-                white-space: nowrap;
-            }
-        }
+  $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+  @include media-breakpoint-down($breakpoint) {
+    .table-responsive#{$infix} {
+
+      th,
+      td {
+        white-space: nowrap;
+      }
     }
+  }
 }
 
 
 .table-bordered {
-    // Khi dùng class .table-bordered đã thêm border cho từng ô th, td rồi
-    // Bỏ của bảng đi cho đỡ bị trường hợp 2 border khi dùng với .table-responsive
-	// Đang bị lỗi không có border-top, border-left, border-right
-    // border: none;
+  // Khi dùng class .table-bordered đã thêm border cho từng ô th, td rồi
+  // Bỏ của bảng đi cho đỡ bị trường hợp 2 border khi dùng với .table-responsive
+  // Đang bị lỗi không có border-top, border-left, border-right
+  // border: none;
 }
 
 // Cho border nhỏ lại
 // Không để border quá đậm
 .table {
-    thead {
-        th,
-        td {
-            border-bottom-width: 1px;
-        }
+  thead {
+
+    th,
+    td {
+      border-bottom-width: 1px;
     }
+  }
 }
 
 // Bootstrap 5 có style .table-bordered>:not(caption)>* { border-width: 1px 0; } nên bị đậm border-bottom của thead
 // Sửa lại để k bị đậm
-.table > :not(:first-child) {
-    border-top-width: 0;
+.table> :not(:first-child) {
+  border-top-width: 0;
 }
 
 // Căn ngang giữa tiêu đề
 .table {
-    thead {
-        th {
-            text-align: center;
-        }
+  thead {
+    th {
+      text-align: center;
     }
+  }
 }
 
 
 // Căn dọc giữa
 .table {
-    th,
-    td {
-        vertical-align: middle;
-    }
+
+  th,
+  td {
+    vertical-align: middle;
+  }
 }
 
 // Bỏ border ở bảng
 .table-borderless {
-    th,
-    td {
-        border-left: none;
-        border-right: none;
-        border-bottom: none;
 
-        // border-top: 1px solid $border-color; // thiết lập ở dark-theme và light-theme
-    }
+  th,
+  td {
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
 
-    th {
-        border-top: none !important;
-    }
+    // border-top: 1px solid $border-color; // thiết lập ở dark-theme và light-theme
+  }
+
+  th {
+    border-top: none !important;
+  }
 }

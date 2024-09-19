@@ -1,24 +1,24 @@
 {
-    "name": "@lockex1987/bootstrap-extended",
-    "version": "1.2.1",
-    "description": "Add utility classes, support Vue, borderless, dark-theme",
-    "keywords": [
-        "bootstrap-extended",
-        "utility",
-        "borderless",
-        "dark-theme"
-    ],
-    "author": "lockex1987",
-    "license": "MIT",
-    "peerDependencies": {
-        "bootstrap": "^5.1.1"
-    },
-    "homepage": "https://github.com/lockex1987/bootstrap-extended#readme",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/lockex1987/bootstrap-extended.git"
-    },
-    "bugs": {
-        "url": "https://github.com/lockex1987/bootstrap-extended/issues"
-    }
+  "name": "@lockex1987/bootstrap-extended",
+  "version": "1.2.1",
+  "description": "Add utility classes, support Vue, borderless, dark-theme",
+  "keywords": [
+    "bootstrap-extended",
+    "utility",
+    "borderless",
+    "dark-theme"
+  ],
+  "author": "lockex1987",
+  "license": "MIT",
+  "peerDependencies": {
+    "bootstrap": "^5.1.1"
+  },
+  "homepage": "https://github.com/lockex1987/bootstrap-extended#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lockex1987/bootstrap-extended.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lockex1987/bootstrap-extended/issues"
+  }
 }

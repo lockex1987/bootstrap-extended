@@ -1,9 +1,9 @@
 .shadow-up-sm {
-	box-shadow: 0 -0.125rem 0.25rem rgb(0 0 0 / 8%) !important;
+  box-shadow: 0 -0.125rem 0.25rem rgb(0 0 0 / 8%) !important;
 }
 
 .shadow-lg-none {
-	@include media-breakpoint-up(lg) {
-		box-shadow: none !important;
-	}
+  @include media-breakpoint-up(lg) {
+    box-shadow: none !important;
+  }
 }

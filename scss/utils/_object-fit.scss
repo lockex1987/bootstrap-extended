@@ -1,15 +1,15 @@
 .object-fit-cover {
-    object-fit: cover;
+  object-fit: cover;
 }
 
 // Hiển thị ảnh rõ nét, không bị scale, nhưng sẽ bị crop
 .object-fit-none {
-    object-fit: none;
+  object-fit: none;
 }
 
 .object-fit-lg-none {
-    // TODO: không có mixin mq, sử dụng của Bootstrap
-    // @include mq(lg) {
-        object-fit: none;
-    // }
+  // TODO: không có mixin mq, sử dụng của Bootstrap
+  // @include mq(lg) {
+  object-fit: none;
+  // }
 }

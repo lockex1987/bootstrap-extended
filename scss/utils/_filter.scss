@@ -1,10 +1,10 @@
 // Đơn sắc, nhưng mà vẫn nổi bật
 .mono-tone {
-    filter: grayscale(50%) contrast(50%) brightness(125%);
+  filter: grayscale(50%) contrast(50%) brightness(125%);
 }
 
 .hover\:filter-none {
-    &:hover {
-        filter: none;
-    }
+  &:hover {
+    filter: none;
+  }
 }

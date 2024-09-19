@@ -1,21 +1,21 @@
 .top-left {
-    top: 0;
-    left: 0;
+  top: 0;
+  left: 0;
 }
 
 .top-right {
-    top: 0;
-    right: 0;
+  top: 0;
+  right: 0;
 }
 
 .bottom-left {
-    bottom: 0;
-    left: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .bottom-right {
-    bottom: 0;
-    right: 0;
+  bottom: 0;
+  right: 0;
 }
 
 
@@ -26,13 +26,13 @@
 $positions: static, relative, absolute, fixed, sticky !default;
 
 @each $breakpoint in map-keys($grid-breakpoints) {
-    @each $position in $positions {
-        @include media-breakpoint-up($breakpoint) {
-            $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+  @each $position in $positions {
+    @include media-breakpoint-up($breakpoint) {
+      $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
-            .position#{$infix}-#{$position} {
-                position: $position !important;
-            }
-        }
-    }  
+      .position#{$infix}-#{$position} {
+        position: $position !important;
+      }
+    }
+  }
 }

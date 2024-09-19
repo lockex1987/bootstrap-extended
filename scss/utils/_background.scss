@@ -1,18 +1,18 @@
 .bg-semi-transparent {
-    background-color: rgba(0, 0, 0, 0.1) !important;
+  background-color: rgba(0, 0, 0, 0.1) !important;
 
-    &.form-control {
-        &::placeholder {
-            color: #AAA;
-        }
+  &.form-control {
+    &::placeholder {
+      color: #AAA;
     }
+  }
 }
 
 // Để reset lại background
 .bg-none {
-    background: none !important;
+  background: none !important;
 }
 
 .bg-no-repeat {
-	background-repeat: no-repeat !important;
+  background-repeat: no-repeat !important;
 }

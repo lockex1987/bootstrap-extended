@@ -1,34 +1,34 @@
 // Có thể sử dụng biến của Bootstrap
 // TODO: Liệu có thể sử dụng mixin của Bootstrap?
 @each $color, $value in $theme-colors {
-    // @debug "Màu sắc: #{$color}";
+  // @debug "Màu sắc: #{$color}";
 
-    // Thêm dấu slash \:
-    .hover\:bg-#{$color} {
-        &:hover {
-            background-color: $value !important;
-        }
+  // Thêm dấu slash \:
+  .hover\:bg-#{$color} {
+    &:hover {
+      background-color: $value !important;
     }
+  }
 
-    .hover\:text-#{$color} {
-        &:hover {
-            color: $value !important;
-        }
+  .hover\:text-#{$color} {
+    &:hover {
+      color: $value !important;
     }
+  }
 
-    .bg-soft-#{$color} {
-        background-color: rgba($value, 0.15) !important;
-    }
+  .bg-soft-#{$color} {
+    background-color: rgba($value, 0.15) !important;
+  }
 }
 
 
 // Các sắc thái màu xám
 @each $color-hundred, $color-value in $grays {
-    .bg-gray-#{$color-hundred} {
-        background-color: $color-value !important;
-    }
+  .bg-gray-#{$color-hundred} {
+    background-color: $color-value !important;
+  }
 
-    .text-gray-#{$color-hundred} {
-        color: $color-value !important;
-    }
+  .text-gray-#{$color-hundred} {
+    color: $color-value !important;
+  }
 }

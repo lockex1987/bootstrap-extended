@@ -1,18 +1,19 @@
 .rating-star {
-    &.rating-star-checked {
-        // Giống .text-orange
-        color: #E06950;
-    }
+  &.rating-star-checked {
+    // Giống .text-orange
+    color: #E06950;
+  }
 
-    &.can-update {
-        cursor: pointer;
+  &.can-update {
+    cursor: pointer;
 
-        &:hover {
-            &,
-            & ~ .rating-star {
-                // Giống .btn-primary
-                color: #007bff;
-            }
-        }
+    &:hover {
+
+      &,
+      &~.rating-star {
+        // Giống .btn-primary
+        color: #007bff;
+      }
     }
+  }
 }

@@ -1,14 +1,14 @@
 // Ẩn caret
 // Bỏ class .dropdown-toggle cũng được
 .no-caret-right-down::after {
-    display: none;
+  display: none;
 }
 
 .caret-up {
-    display: inline-block;
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    border-bottom: 7px solid $gray-700; // giống màu dropdown-menu
-    position: absolute;
-    bottom: 100%;
+  display: inline-block;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid $gray-700; // giống màu dropdown-menu
+  position: absolute;
+  bottom: 100%;
 }

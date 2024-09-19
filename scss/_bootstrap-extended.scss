@@ -37,28 +37,28 @@
 
 // Bỏ border ở trên modal
 .modal-header {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 .modal-footer {
-    border-top: none;
+  border-top: none;
 }
 
 // Bỏ border ở form-control, sử dụng background để phân biệt
 .form-control,
 .form-select,
 .input-group-text {
-    border: none;
+  border: none;
 }
 
 // Bỏ border ở phân trang (không nên)
 /*
 .page-link {
-    border: none;
+  border: none;
 }
 
 .page-item .page-link {
-    border-radius: 0.25rem;
+  border-radius: 0.25rem;
 }
 */
 
@@ -68,7 +68,7 @@
 
 // Vue framework
 [v-cloak] {
-    display: none
+  display: none
 }
 
 
@@ -76,8 +76,8 @@
 *,
 *:focus,
 *:active {
-    outline: none;
-    // box-shadow: none;
+  outline: none;
+  // box-shadow: none;
 }
 
 
@@ -86,8 +86,8 @@
 th,
 .modal-title,
 .panel-header {
-    font-weight: 500;
-    font-size: 1rem;
+  font-weight: 500;
+  font-size: 1rem;
 }
 
 
@@ -96,105 +96,105 @@ th,
 /*
 .modal-title,
 .panel-header {
-    border-left: 0.25rem solid $warning;
-    padding-left: 0.75rem;
+  border-left: 0.25rem solid $warning;
+  padding-left: 0.75rem;
 }
 */
 
 
 label {
-    color: $text-muted;
+  color: $text-muted;
 }
 
 
 code {
-    color: $warning;
-    font-size: 1rem; // Bootstrap đang nhỏ hơn, cho lại về bình thường
+  color: $warning;
+  font-size: 1rem; // Bootstrap đang nhỏ hơn, cho lại về bình thường
 }
 
 
 .image-box-shadow {
-    box-shadow: inset 0 0 0 1px hsla(0, 0%, 0%, 0.1);
+  box-shadow: inset 0 0 0 1px hsla(0, 0%, 0%, 0.1);
 }
 
 
 // Cho ảnh ở trên của rounded card
 // Bootstrap đã có sẵn?
 .rounded-up {
-    border-radius: 0.25rem 0.25rem 0 0;
+  border-radius: 0.25rem 0.25rem 0 0;
 }
 
 .rounded-down {
-    border-radius: 0 0 0.25rem 0.25rem;
+  border-radius: 0 0 0.25rem 0.25rem;
 }
 
 
 // Hiển thị các dấu $ ở phía trước câu lệnh
 // Các ký tự này sẽ không bị copy
 .command-line {
-    &::before {
-        content: "$ ";
-        font-size: 0.75rem;
-    }
+  &::before {
+    content: "$ ";
+    font-size: 0.75rem;
+  }
 }
 
 
 // Ở Bootstrap 5, các thẻ a mặc định là có underline, phải thêm text-decoration-none nếu muốn ẩn đi
 // Chuyển lại mặc định là không có underline
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 
 // Bootstrap 5 bỏ text-justify, mình vẫn dùng nhiều
 .text-justify {
-    text-align: justify;
+  text-align: justify;
 }
 
 
 // Style nghiêng
 .skew-wrapper {
-    transform: skew(-30deg) translateX(20px);;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+  transform: skew(-30deg) translateX(20px);
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .unskew {
-    transform: skew(30deg);
-    display: inline-block;
+  transform: skew(30deg);
+  display: inline-block;
 }
 
 
 // Bỏ margin này đi
-.modal-footer > * {
-    margin: unset;
+.modal-footer>* {
+  margin: unset;
 }
 
 
 // Thư viện daterangepicker
 // TODO: Tách file riêng, summernote
 .daterangepicker .ranges li.active {
-    background-color: $primary !important;
+  background-color: $primary !important;
 }
 
 .daterangepicker td.active,
 .daterangepicker td.active:hover {
-    background-color: $primary !important;
+  background-color: $primary !important;
 }
 
 // Đang bị màu đen, chuyển thành trắng
 .btn-primary,
 .btn-primary:hover,
 .btn-outline-primary:hover {
-    color: #fff;
+  color: #fff;
 }
 
 textarea {
-    min-height: 150px !important;
+  min-height: 150px !important;
 }
 
 // Các icon hành động ở bảng
 // Nên để cùng màu hết
 .table-action-icon {
-    color: $primary !important;
+  color: $primary !important;
 }
